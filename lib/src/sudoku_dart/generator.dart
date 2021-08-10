@@ -228,7 +228,6 @@ Sudoku generator({LEVEL level = LEVEL.EASY}) {
   var fillRules = _buildFillRules(puzzleRules);
 
   Sudoku sudoku;
-  int beginTime = DateTime.now().millisecondsSinceEpoch;
 
 //  int retryCount = 0;
   while (sudoku == null) {
@@ -240,8 +239,6 @@ Sudoku generator({LEVEL level = LEVEL.EASY}) {
     }
   }
 
-  int endTime = DateTime.now().millisecondsSinceEpoch;
-  print('数独题目生成耗时: ${endTime - beginTime}\'ms');
 
   return sudoku;
 }
