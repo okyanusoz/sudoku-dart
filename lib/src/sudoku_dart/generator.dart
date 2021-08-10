@@ -185,7 +185,7 @@ Sudoku _generator(List<_FillRule> fillRules) {
   });
 
   // 基础数据填充
-  List<int> basicPuzzle = List.generate(81, (index) => -1);
+  List<int> basicPuzzle = List.generate(81, (index) => 0);
   basicIndexes.forEach((index) {
     _simFill(basicPuzzle, rows, cols, zones, index, numPool);
   });
